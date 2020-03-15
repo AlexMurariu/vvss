@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vvss.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -121,17 +122,9 @@
       <updated>1584292472370</updated>
       <workItem from="1584292480212" duration="296000" />
       <workItem from="1584292838137" duration="6448000" />
-      <workItem from="1584304931525" duration="261000" />
+      <workItem from="1584304931525" duration="813000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="AppTest - 2020.03.15 at 19h 23m 00s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2020.03.15 at 20h 51m 15s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -145,5 +138,21 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1584305005382" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1584305197369">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584305197369" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1584305197368">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584305197368" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1584305197368">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584305197368" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1584305197369">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584305197369" />
   </component>
 </project>
