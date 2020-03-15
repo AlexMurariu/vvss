@@ -4,7 +4,7 @@ import Lab3VVSS.Domain.HasId;
 import Lab3VVSS.Domain.Nota;
 import Lab3VVSS.Validator.NotaValidator;
 
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDateTime;
 
 public class NotaFileRepo extends AbstractFileRepository {

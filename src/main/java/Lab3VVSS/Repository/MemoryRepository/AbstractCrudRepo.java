@@ -36,20 +36,28 @@ public abstract class AbstractCrudRepo<ID,E extends HasId<ID>> implements Repo<I
         if(entity==null){
             throw new IllegalArgumentException("Entity can not be null!\n");
         }
-        validator.validate(entity);
-        return entityes.putIfAbsent(entity.getId(),entity);
+        try{
+            validator.validate(entity);
+            return entityes.putIfAbsent(entity.getId(),entity);
+        }catch(ValidatorException ex){
+            throw new ValidatorException(ex.getMessage());
+        }
     }
     @Override
     public E delete(ID id){
         return entityes.remove(id);
     }
     @Override
-    public E update(E entity) throws ValidatorException {
-        if (entity == null) {
-            throw new IllegalArgumentException("Entity can not be null!\n");
-        } else {
-            validator.validate(entity);
-            return entityes.replace(entity.getId(), entity);
+    public E update(E entity) {
+        try {
+            if (entity == null) {
+                throw new IllegalArgumentException("Entity can not be null!\n");
+            } else {
+                validator.validate(entity);
+                return entityes.replace(entity.getId(), entity);
+            }
+        }catch(ValidatorException e){
+            return null;
         }
     }
     //@Override

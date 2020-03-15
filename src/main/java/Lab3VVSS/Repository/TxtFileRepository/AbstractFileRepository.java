@@ -83,10 +83,7 @@ public abstract class AbstractFileRepository<ID,E extends HasId<ID>> extends Abs
             return e;
         }catch (IOException ex){
             throw  new RepositoryException("The file "+filename+" cannot be found!\n");
-        } catch (ValidatorException e) {
-            e.printStackTrace();
         }
-        return entity;
     }
 
 

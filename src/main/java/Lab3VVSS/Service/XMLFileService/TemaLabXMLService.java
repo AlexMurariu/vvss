@@ -3,9 +3,8 @@ package Lab3VVSS.Service.XMLFileService;
 import Lab3VVSS.Domain.TemaLab;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.XMLFileRepository.TemaLabXMLRepo;
-import Lab3VVSS.Service.XMLFileService.AbstractXMLService;
 
-public class TemaLabXMLService extends AbstractXMLService<Integer, TemaLab> {
+public class TemaLabXMLService extends AbstractXMLService<Integer, TemaLab>{
     private TemaLabXMLRepo xmlrepo;
 
     public TemaLabXMLService(TemaLabXMLRepo xmlrepo)  {

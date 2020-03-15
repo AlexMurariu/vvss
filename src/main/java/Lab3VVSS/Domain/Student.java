@@ -1,6 +1,5 @@
 package Lab3VVSS.Domain;
 
-
 public class Student implements HasId<String> {
     private  String id;
     private  String nume;

@@ -1,11 +1,9 @@
 package Lab3VVSS.Repository.TxtFileRepository;
-
 import Lab3VVSS.Domain.HasId;
 import Lab3VVSS.Domain.TemaLab;
-import Lab3VVSS.Repository.TxtFileRepository.AbstractFileRepository;
 import Lab3VVSS.Validator.TemaLabValidator;
 
-import java.io.IOException;
+import java.io.*;
 
 public class TemaLabFileRepo extends AbstractFileRepository {
     public TemaLabFileRepo(String filename, TemaLabValidator val) throws IOException {

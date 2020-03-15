@@ -4,7 +4,7 @@ import Lab3VVSS.Domain.HasId;
 import Lab3VVSS.Domain.Student;
 import Lab3VVSS.Validator.StudentValidator;
 
-import java.io.IOException;
+import java.io.*;
 
 public class StudentFileRepo extends AbstractFileRepository {
     public StudentFileRepo(String filename, StudentValidator val) throws IOException {

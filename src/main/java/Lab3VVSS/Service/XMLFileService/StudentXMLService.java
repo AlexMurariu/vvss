@@ -3,12 +3,11 @@ package Lab3VVSS.Service.XMLFileService;
 import Lab3VVSS.Domain.Student;
 import Lab3VVSS.Repository.XMLFileRepository.StudentXMLRepo;
 
-
-public class StudentXMLService extends AbstractXMLService<String, Student> {
+public class StudentXMLService extends AbstractXMLService<String, Student>{
     private StudentXMLRepo xmlrepo;
 
-    public StudentXMLService(StudentXMLRepo strepo) {
-        super();
+    public StudentXMLService(StudentXMLRepo xmlrepo)  {
+        super(xmlrepo);
     }
 
     @Override

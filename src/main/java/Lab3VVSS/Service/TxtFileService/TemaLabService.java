@@ -3,7 +3,7 @@ package Lab3VVSS.Service.TxtFileService;
 import Lab3VVSS.Domain.TemaLab;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.TxtFileRepository.TemaLabFileRepo;
-import Lab3VVSS.Service.TxtFileService.AbstractService;
+
 
 public class TemaLabService extends AbstractService<Integer, TemaLab> {
     //StudentFileRepo stdRepo;

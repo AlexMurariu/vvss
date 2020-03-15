@@ -59,6 +59,6 @@ public interface Repo<ID,E> {
      //* @throws ValidatorException
      * if the entity is not valid.
      */
-    E update(E entity) throws ValidatorException;
+    E update(E entity) ;
 
 }

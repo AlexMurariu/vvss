@@ -1,21 +1,14 @@
 package Lab3VVSS.Service.XMLFileService;
 
 import Lab3VVSS.Domain.HasId;
-import Lab3VVSS.Domain.Student;
 import Lab3VVSS.Exceptions.ValidatorException;
-import Lab3VVSS.Repository.XMLFileRepository.NotaXMLRepo;
-import Lab3VVSS.Repository.XMLFileRepository.StudentXMLRepo;
-
+import Lab3VVSS.Repository.XMLFileRepository.AbstractXMLRepo;
 
 public abstract class AbstractXMLService<ID,E extends HasId<ID>> {
-    private StudentXMLRepo xmlrepo;
+    private AbstractXMLRepo xmlrepo;
 
-    public AbstractXMLService()  {
-        this.xmlrepo = this.xmlrepo;
-    }
-
-    public AbstractXMLService(NotaXMLRepo xmlrepo) {
-
+    public AbstractXMLService(AbstractXMLRepo xmlrepo)  {
+        this.xmlrepo = xmlrepo;
     }
 
     protected abstract E extractEntity(String[] params);
@@ -24,20 +17,20 @@ public abstract class AbstractXMLService<ID,E extends HasId<ID>> {
 
     public void add(String params[]) throws ValidatorException {
         E e=extractEntity(params);
-        xmlrepo.save((Student) e);
+        xmlrepo.save(e);
     }
     public void remove(ID id){
-        xmlrepo.delete((String) id);
+        xmlrepo.delete(id);
     }
-    public void update(String params[]) throws ValidatorException {
+    public void update(String params[]){
         E s=extractEntity(params);
-        xmlrepo.update((Student) s);
+        xmlrepo.update(s);
     }
     public E findOne(ID id){
-        return (E) xmlrepo.findOne((String) id);
+        return (E) xmlrepo.findOne(id);
     }
     public Iterable<E>findAll(){
-        return (Iterable<E>) xmlrepo.findAll();
+        return xmlrepo.findAll();
     }
     public int getSize(){
         return xmlrepo.getSize();

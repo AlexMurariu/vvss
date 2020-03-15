@@ -1,15 +1,14 @@
 package Lab3VVSS.UI;
 
-import java.io.IOException;
-import java.util.Scanner;
-
 import Lab3VVSS.Exceptions.ServiceException;
 import Lab3VVSS.Exceptions.ValidatorException;
-
 import Lab3VVSS.Service.XMLFileService.AbstractXMLService;
 import Lab3VVSS.Service.XMLFileService.NotaXMLService;
 import Lab3VVSS.Service.XMLFileService.StudentXMLService;
 import Lab3VVSS.Service.XMLFileService.TemaLabXMLService;
+
+import java.io.IOException;
+import java.util.Scanner;
 
 
 public class ui {
@@ -103,16 +102,16 @@ public class ui {
         System.out.println("Data:");
         data=scanner.nextLine();
         //scanner.nextLine();
-//        String val1=notaSrv.depunctare(tmLbSrv,idt,val);
-//        String[] params={id,ids,idt,val1,data};
-//        try{
-//            notaSrv.add(params);
-//            notaSrv.printAllNotes(tmLbSrv);
-//        }catch (ValidatorException ex){
-//            System.out.println(ex.getMessage());
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        String val1=notaSrv.depunctare(tmLbSrv,idt,val);
+        String[] params={id,ids,idt,val1,data};
+        try{
+            notaSrv.add(params);
+            notaSrv.printAllNotes(tmLbSrv);
+        }catch (ValidatorException ex){
+            System.out.println(ex.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 

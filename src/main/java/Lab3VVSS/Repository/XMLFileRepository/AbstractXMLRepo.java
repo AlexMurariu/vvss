@@ -1,6 +1,5 @@
 package Lab3VVSS.Repository.XMLFileRepository;
 
-
 import Lab3VVSS.Domain.HasId;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.MemoryRepository.AbstractCrudRepo;
@@ -96,7 +95,7 @@ public abstract class AbstractXMLRepo<ID,E extends HasId<ID>> extends AbstractCr
     }
 
     @Override
-    public E update(E entity) throws ValidatorException {
+    public E update(E entity) {
         E stuff=super.update(entity);
         if(stuff!=null)
             writeAll();
