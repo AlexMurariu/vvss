@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vvss.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TemeXML.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentiXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentiXML.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/MemoryRepository/AbstractCrudRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/MemoryRepository/AbstractCrudRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/TxtFileRepository/AbstractFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/TxtFileRepository/AbstractFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/XMLFileRepository/AbstractXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/XMLFileRepository/AbstractXMLRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/NotaXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/NotaXMLService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/StudentXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/StudentXMLService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/NotaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/NotaValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/StudentValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Lab3VVSS.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Lab3VVSS/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Lab3VVSS/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="bir" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -52,10 +45,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/Lab3VVSS" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
+      <module name="vvss" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,11 +88,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testAddAssignmentInvalidGroupInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vvss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab3VVSS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddAssignmentInvalidGroupInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAddAssignmentValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vvss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab3VVSS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddAssignmentValidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentInvalidGroupInput" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentValidInput" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +154,9 @@
       <updated>1584292472370</updated>
       <workItem from="1584292480212" duration="296000" />
       <workItem from="1584292838137" duration="6448000" />
-      <workItem from="1584304931525" duration="813000" />
+      <workItem from="1584304931525" duration="2390000" />
+      <workItem from="1584724514341" duration="1839000" />
+      <workItem from="1585080491917" duration="648000" />
     </task>
     <servers />
   </component>
@@ -134,25 +168,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="286" y="111" key="#AppTest/0.0.1440.900@0.0.1440.900" timestamp="1584305052548" />
+    <state x="396" y="115" key="#Main" timestamp="1585080838392">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="396" y="115" key="#Main/0.0.1440.900@0.0.1440.900" timestamp="1585080838392" />
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584305005382">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1584305005382" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1584305197369">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1585081220238">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584305197369" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1584305197368">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640733" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585081220238" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1585081220237">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584305197368" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1584305197368">
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640730" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585081220237" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1585081220236">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584305197368" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1584305197369">
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640729" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585081220236" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1585081220237">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584305197369" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640731" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585081220237" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1585080493593">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1585080493593" />
   </component>
 </project>

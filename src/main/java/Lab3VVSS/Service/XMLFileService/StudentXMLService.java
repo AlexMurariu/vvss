@@ -20,5 +20,4 @@ public class StudentXMLService extends AbstractXMLService<String, Student>{
         }
         return new Student(params[0],params[1],grupa,params[3],params[4]);
     }
-
 }
