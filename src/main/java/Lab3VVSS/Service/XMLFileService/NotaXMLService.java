@@ -2,6 +2,7 @@ package Lab3VVSS.Service.XMLFileService;
 
 import Lab3VVSS.Domain.Nota;
 import Lab3VVSS.Domain.TemaLab;
+import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.XMLFileRepository.NotaXMLRepo;
 
 
@@ -24,6 +25,10 @@ public class NotaXMLService extends AbstractXMLService<Integer, Nota> {
         System.out.println(val1);
         //Nota n1=new Nota(idn,n.getStudentId(),idt,n.getValoare()-(t.getSaptammanaPredarii()-t.getTermenLimita()),n.getLdt());
         return val1;
+    }
+
+    public void add(Nota nota) throws ValidatorException {
+        xmlrepo.save(nota);
     }
 
     public void printAllNotes(TemaLabXMLService srv) throws IOException {

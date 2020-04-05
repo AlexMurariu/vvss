@@ -1,16 +1,14 @@
 package Lab3VVSS.Domain;
 
 public class TemaLab implements HasId<Integer> {
-    private int nr;
+    private Integer nr;
     private String descriere;
-    private int termenLimita;
-   // private int saptamanaCurenta;
-    private int saptammanaPredarii;
-    public TemaLab(int nr,String descriere,int termenLimita,int saptammanaPredarii){
+    private Integer termenLimita;
+    private Integer saptammanaPredarii;
+    public TemaLab(Integer nr, String descriere, Integer termenLimita, Integer saptammanaPredarii){
         this.setId(nr);
         this.setDescriere(descriere);
         this.setTermenLimita(termenLimita);
-        //this.setSaptamanaCurenta(saptamanaCurenta);
         this.setSaptammanaPredarii(saptammanaPredarii);
     }
     @Override
@@ -30,27 +28,23 @@ public class TemaLab implements HasId<Integer> {
         this.descriere = descriere;
     }
 
-    public int getTermenLimita() {
+    public Integer getTermenLimita() {
         return termenLimita;
     }
 
-    public void setTermenLimita(int termenLimita) {
+    public void setTermenLimita(Integer termenLimita) {
         this.termenLimita = termenLimita;
     }
 
-    public int getSaptammanaPredarii() {
+    public Integer getSaptammanaPredarii() {
         return saptammanaPredarii;
     }
 
-    public void setSaptammanaPredarii(int saptammanaPredarii) {
+    public void setSaptammanaPredarii(Integer saptammanaPredarii) {
         this.saptammanaPredarii = saptammanaPredarii;
     }
     @Override
     public String toString(){
         return this.nr+"#"+this.descriere+"#"+this.termenLimita+"#"+this.saptammanaPredarii;
     }
-
-    //public int getSaptamanaCurenta() { return saptamanaCurenta; }
-
-    //public void setSaptamanaCurenta(int saptamanaCurenta) {this.saptamanaCurenta = saptamanaCurenta;}
 }

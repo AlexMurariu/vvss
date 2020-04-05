@@ -4,6 +4,8 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import Lab3VVSS.Domain.Student;
+import Lab3VVSS.Domain.TemaLab;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.XMLFileRepository.StudentXMLRepo;
 import Lab3VVSS.Repository.XMLFileRepository.TemaLabXMLRepo;
@@ -24,8 +26,8 @@ public class AppTest {
         StudentValidator studentValidator = new StudentValidator();
         StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
         StudentXMLService xmlService = new StudentXMLService(xmlRepo);
-        String[] params = {"0", "Birhan", "935", "mbie2368@scs.ubbcluj.ro", "Radu Dragos"};
-        xmlService.add(params);
+        Student stud = new Student("0", "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        xmlService.add(stud);
         assertEquals(xmlRepo.size(), 1);
     }
 
@@ -35,9 +37,9 @@ public class AppTest {
         StudentValidator studentValidator = new StudentValidator();
         StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
         StudentXMLService xmlService = new StudentXMLService(xmlRepo);
-        String[] params = {"0", "Birhan", "No bueno", "mbie2368@scs.ubbcluj.ro", "Radu Dragos"};
+        Student stud = new Student("", "Birhan", 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
         try {
-            xmlService.add(params);
+            xmlService.add(stud);
             fail("Rip");
         } catch (ValidatorException exception) {
 
@@ -45,28 +47,118 @@ public class AppTest {
     }
 
     @Test
-    public void testAddAssignmentValidInput() throws ValidatorException {
+    public void testAddAssignmentTC1() {
 
         TemaLabValidator temaLabValidator = new TemaLabValidator();
         TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
         TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
-        String[] params = {"0", "Ceva descriere", "10", "12"};
-        xmlService.add(params);
+        TemaLab tema = new TemaLab(null, null, null, null);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testAddAssignmentTC2() throws ValidatorException {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(1, "Ceva descriere", 10, 12);
+        xmlService.add(tema);
         assertEquals(xmlRepo.size(), 1);
     }
 
     @Test
-    public void testAddAssignmentInvalidGroupInput() {
+    public void testAddAssignmentTC3() {
 
         TemaLabValidator temaLabValidator = new TemaLabValidator();
         TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
         TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
-        String[] params = {"0", "", "10", "12"};
+        TemaLab tema = new TemaLab(null, "asdsa", 10, 1);
         try {
-            xmlService.add(params);
-            fail("Rip");
+            xmlService.add(tema);
         } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }   @Test
+    public void testAddAssignmentTC5() {
 
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, null, 14, 10);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }   @Test
+    public void testAddAssignmentTC6() {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, "", 10, 3);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }   @Test
+    public void testAddAssignmentTC7() {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, "null", null, 3);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testAddAssignmentTC9() {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, "null", 15, 3);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+    @Test
+    public void testAddAssignmentTC10() {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, "null", 14, null);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testAddAssignmentTC12() {
+
+        TemaLabValidator temaLabValidator = new TemaLabValidator();
+        TemaLabXMLRepo xmlRepo = new TemaLabXMLRepo(temaLabValidator, "TemeXML.xml");
+        TemaLabXMLService xmlService = new TemaLabXMLService(xmlRepo);
+        TemaLab tema = new TemaLab(3, "null", 14, 15);
+        try {
+            xmlService.add(tema);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
         }
     }
 }

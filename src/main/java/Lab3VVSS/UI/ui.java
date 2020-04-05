@@ -1,5 +1,8 @@
 package Lab3VVSS.UI;
 
+import Lab3VVSS.Domain.Nota;
+import Lab3VVSS.Domain.Student;
+import Lab3VVSS.Domain.TemaLab;
 import Lab3VVSS.Exceptions.ServiceException;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Service.XMLFileService.AbstractXMLService;
@@ -8,6 +11,7 @@ import Lab3VVSS.Service.XMLFileService.StudentXMLService;
 import Lab3VVSS.Service.XMLFileService.TemaLabXMLService;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 
@@ -28,89 +32,91 @@ public class ui {
     }
     */
 
-    public void printAllEntities(AbstractXMLService srv){
-        srv.findAll().forEach(x-> System.out.println(x));
-    }
+//    public void printAllEntities(AbstractXMLService srv){
+//        srv.findAll().forEach(x-> System.out.println(x));
+//    }
 
 
     public void addStudent() throws ValidatorException {
-        Scanner scanner = new Scanner(System.in);
-        String id,nume,grupa,email,prof;
-        System.out.println("Id student:");
-        id=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Nume student:");
-        nume=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Grupa:");
-        grupa=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Email:");
-        email=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Profesor indrumator:");
-        prof=scanner.nextLine();
-        //scanner.nextLine();
-        String[] params={id,nume,grupa,email,prof};
         try{
-            stdSrv.add(params);
+            Scanner scanner = new Scanner(System.in);
+            String id,nume,grupa,email,prof;
+            System.out.println("Id student:");
+            id=scanner.nextLine();
+            System.out.println("Nume student:");
+            nume=scanner.nextLine();
+            System.out.println("Grupa:");
+            grupa=scanner.nextLine();
+            int _grupa = Integer.parseInt(grupa);
+//            int _grupa = Integer.parseInt(grupa);
+            System.out.println("Email:");
+            email=scanner.nextLine();
+            System.out.println("Profesor indrumator:");
+            prof=scanner.nextLine();
+            stdSrv.add(new Student(id, nume, _grupa, email, prof));
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
+        } catch (NumberFormatException exception){
+            System.out.println(exception.getMessage());
         }
-
     }
 
 
     public void addHomework() throws ValidatorException {
-        Scanner scanner = new Scanner(System.in);
-        String id,descr,saptLim,saptPred;
-        System.out.println("Nr tema:");
-        id=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Descriere tema:");
-        descr=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Saptamana limita:");
-        saptLim=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Saptamana predarii:");
-        saptPred=scanner.nextLine();
-        //scanner.nextLine();
-        String[] params={id,descr,saptLim,saptPred};
         try{
-            tmLbSrv.add(params);
+            Scanner scanner = new Scanner(System.in);
+            String id,descr,saptLim,saptPred;
+            System.out.println("Nr tema:");
+            id=scanner.nextLine();
+            int temaId = Integer.parseInt(id);
+            //scanner.nextLine();
+            System.out.println("Descriere tema:");
+            descr=scanner.nextLine();
+            //scanner.nextLine();
+            System.out.println("Saptamana limita:");
+            saptLim=scanner.nextLine();
+            int saptL = Integer.parseInt(saptLim);
+            //scanner.nextLine();
+            System.out.println("Saptamana predarii:");
+            saptPred=scanner.nextLine();
+            int saptP = Integer.parseInt(saptPred);
+            //scanner.nextLine();
+            tmLbSrv.add(new TemaLab(temaId, descr, saptL, saptP));
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
+        } catch (NumberFormatException exception){
+            System.out.println(exception.getMessage());
         }
     }
 
     public void addNota() throws ValidatorException {
-        Scanner scanner = new Scanner(System.in);
-        String id,ids,idt,val,data;
-        System.out.println("Id nota:");
-        id=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Id student:");
-        ids=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Id tema:");
-        idt=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Valoare:");
-        val=scanner.nextLine();
-        //scanner.nextLine();
-        System.out.println("Data:");
-        data=scanner.nextLine();
-        //scanner.nextLine();
-        String val1=notaSrv.depunctare(tmLbSrv,idt,val);
-        String[] params={id,ids,idt,val1,data};
         try{
-            notaSrv.add(params);
+            Scanner scanner = new Scanner(System.in);
+            String id,ids,idt,val,data;
+            System.out.println("Id nota:");
+            id=scanner.nextLine();
+            int _id = Integer.parseInt(id);
+            System.out.println("Id student:");
+            ids=scanner.nextLine();
+            int _ids = Integer.parseInt(ids);
+            System.out.println("Id tema:");
+            idt=scanner.nextLine();
+            int _idt = Integer.parseInt(idt);
+            System.out.println("Valoare:");
+            val=scanner.nextLine();
+            double _val = Double.parseDouble(val);
+            System.out.println("Data:");
+            data=scanner.nextLine();
+            LocalDateTime _data = LocalDateTime.parse(data);
+            String val1=notaSrv.depunctare(tmLbSrv,idt,val);
+            notaSrv.add(new Nota(_id, ids, _idt, _val, _data));
             notaSrv.printAllNotes(tmLbSrv);
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (NumberFormatException exception){
+            System.out.println(exception.getMessage());
         }
 
     }
@@ -130,7 +136,7 @@ public class ui {
 
     public void delHomework() throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
-        Integer id;
+        int id;
         System.out.println("Id student:");
         id=scanner.nextInt();
         try{
@@ -143,36 +149,27 @@ public class ui {
 
     public void updStudent() throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
-        String id,numenou,grupanou,emailnou,profnou;
+        String id,nume,grupa,email,prof;
         System.out.println("Id student:");
         id=scanner.nextLine();
-        scanner.nextLine();
-        System.out.println("Nume student nou:");
-        numenou=scanner.nextLine();
-        scanner.nextLine();
-        System.out.println("Grupa noua:");
-        grupanou=scanner.nextLine();
-        scanner.nextLine();
-        System.out.println("Email nou:");
-        emailnou=scanner.nextLine();
-        scanner.nextLine();
-        System.out.println("Profesor indrumator nou:");
-        profnou=scanner.nextLine();
-        scanner.nextLine();
-        String[] params={id,numenou,grupanou,emailnou,profnou};
-        stdSrv.update(params);
+        System.out.println("Nume student:");
+        nume=scanner.nextLine();
+        System.out.println("Grupa:");
+        grupa=scanner.nextLine();
+        int _grupa = Integer.parseInt(grupa);
+        System.out.println("Email:");
+        email=scanner.nextLine();
+        System.out.println("Profesor indrumator:");
+        prof=scanner.nextLine();
+        stdSrv.update(new Student(id, nume, _grupa, email, prof));
     }
-
-
-
-
 
     public void prelungireDeadLine() throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
-        String id,descr,saptLim,saptPred;
-        int saptCurenta;
+        String id,descr,saptLim,saptPred,saptCurenta;
         System.out.println("Nr tema:");
         id=scanner.nextLine();
+        int _id = Integer.parseInt(id);
         scanner.nextLine();
         System.out.println("Descriere tema:");
         descr=scanner.nextLine();
@@ -180,26 +177,23 @@ public class ui {
         System.out.println("Saptamana limita:");
         saptLim=scanner.nextLine();
         scanner.nextLine();
+        int _saptLim = Integer.parseInt(saptLim);
         System.out.println("Saptamana predarii:");
         saptPred=scanner.nextLine();
         scanner.nextLine();
+        int _saptPred = Integer.parseInt(saptPred);
         System.out.println("Saptamana curenta:");
-        saptCurenta=scanner.nextInt();
+        saptCurenta=scanner.nextLine();
         scanner.nextLine();
-        //String[] params={id,descr,saptLim,saptPred};
+        int _saptCurenta = Integer.parseInt(saptCurenta);
         try{
-            tmLbSrv.prelungireTemaLab(id,descr,saptLim,saptPred,saptCurenta);
+            tmLbSrv.prelungireTemaLab(_id,descr,_saptLim,_saptPred,_saptCurenta);
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
+        } catch (NumberFormatException exception){
+            System.out.println(exception.getMessage());
         }
     }
-
-
-
-
-
-
-
 
     public void run() throws ValidatorException, IOException {
         Scanner scanner = new Scanner(System.in);
@@ -224,7 +218,7 @@ public class ui {
                 }else if(opt.equals("3a")){
                     this.updStudent();
                 }else if(opt.equals("4a")) {
-                    this.printAllEntities(stdSrv);
+//                    this.printAllEntities(stdSrv);
                 }else if (opt.equals("1b")) {
                     this.addHomework();
                 }else if (opt.equals("2b")) {
@@ -232,7 +226,7 @@ public class ui {
                 }else if(opt.equals("3b")){
                     this.prelungireDeadLine();
                 }else if(opt.equals("4b")){
-                    this.printAllEntities(tmLbSrv);
+//                    this.printAllEntities(tmLbSrv);
                 }else if(opt.equals("5")){
                     this.addNota();
                 }else if(opt.equals("6")){
@@ -243,13 +237,5 @@ public class ui {
                     System.out.println("Optiune invalida!");
                 }
             }
-        //} catch (ServiceException ex) {
-          //  System.out.println(ex.getMessage());
-        //} catch (RepositoryException ex) {
-            //System.out.println(ex.getMessage());
-        //} catch (ValidatorException e) {
-          //  System.out.println(e.getMessage());
-        //}
-
     }
 }

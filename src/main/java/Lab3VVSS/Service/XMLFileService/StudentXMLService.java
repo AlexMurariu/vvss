@@ -1,16 +1,17 @@
 package Lab3VVSS.Service.XMLFileService;
 
 import Lab3VVSS.Domain.Student;
+import Lab3VVSS.Domain.TemaLab;
+import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.XMLFileRepository.StudentXMLRepo;
 
-public class StudentXMLService extends AbstractXMLService<String, Student>{
+public class StudentXMLService{
     private StudentXMLRepo xmlrepo;
 
-    public StudentXMLService(StudentXMLRepo xmlrepo)  {
-        super(xmlrepo);
+    public StudentXMLService(StudentXMLRepo _xmlrepo)  {
+        this.xmlrepo = _xmlrepo;
     }
 
-    @Override
     protected Student extractEntity(String[] params){
         int grupa=0;
         try{
@@ -20,4 +21,15 @@ public class StudentXMLService extends AbstractXMLService<String, Student>{
         }
         return new Student(params[0],params[1],grupa,params[3],params[4]);
     }
+
+    public void add(Student temaLab) throws ValidatorException {
+        this.xmlrepo.save(temaLab);
+    }
+
+    public void remove(String id){
+        xmlrepo.delete(id);
+    }
+
+    public void update(Student stud) {xmlrepo.update(stud);}
+
 }

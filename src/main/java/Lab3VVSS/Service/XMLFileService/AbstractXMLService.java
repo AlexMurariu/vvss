@@ -1,6 +1,7 @@
 package Lab3VVSS.Service.XMLFileService;
 
 import Lab3VVSS.Domain.HasId;
+import Lab3VVSS.Domain.TemaLab;
 import Lab3VVSS.Exceptions.ValidatorException;
 import Lab3VVSS.Repository.XMLFileRepository.AbstractXMLRepo;
 
@@ -15,10 +16,6 @@ public abstract class AbstractXMLService<ID,E extends HasId<ID>> {
         //return new Student(params[0],params[1],Integer.parseInt(params[2]),params[3],params[4]);
     //}
 
-    public void add(String params[]) throws ValidatorException {
-        E e=extractEntity(params);
-        xmlrepo.save(e);
-    }
     public void remove(ID id){
         xmlrepo.delete(id);
     }

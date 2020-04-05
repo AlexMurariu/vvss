@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TemeXML.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentiXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentiXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemeXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TemeXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Domain/TemaLab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Domain/TemaLab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/NotaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/NotaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/TemaLabService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/TemaLabService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/AbstractXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/AbstractXMLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/NotaXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/NotaXMLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/StudentXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/StudentXMLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/TemaLabXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/TemaLabXMLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Validator/TemaLabValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Validator/TemaLabValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Domain/TemaLab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Domain/TemaLab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/MemoryRepository/TemaLabRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/MemoryRepository/TemaLabRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/XMLFileRepository/TemaLabXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Repository/XMLFileRepository/TemaLabXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/TxtFileService/NotaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/TxtFileService/NotaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/TxtFileService/TemaLabService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/TxtFileService/TemaLabService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/AbstractXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/AbstractXMLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/NotaXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/NotaXMLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/StudentXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/StudentXMLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/TemaLabXMLService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Service/XMLFileService/TemaLabXMLService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/TemaLabValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/Validator/TemaLabValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Lab3VVSS/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Lab3VVSS/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +72,6 @@
   <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
-      <module name="vvss" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
       <module name="Lab3VVSS" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testAddAssignmentInvalidGroupInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testAddAssignmentTC1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +110,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
       <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentInvalidGroupInput" />
+      <option name="METHOD_NAME" value="testAddAssignmentTC1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testAddAssignmentValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testAddAssignmentTC10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +126,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
       <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentValidInput" />
+      <option name="METHOD_NAME" value="testAddAssignmentTC10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAddAssignmentTC12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vvss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab3VVSS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddAssignmentTC12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAddAssignmentTC9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vvss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab3VVSS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddAssignmentTC9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.testAddAssignmentInvalidGroupInput" />
-        <item itemvalue="JUnit.AppTest.testAddAssignmentValidInput" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentTC12" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentTC10" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentTC9" />
+        <item itemvalue="JUnit.AppTest.testAddAssignmentTC1" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +200,8 @@
       <workItem from="1584292838137" duration="6448000" />
       <workItem from="1584304931525" duration="2390000" />
       <workItem from="1584724514341" duration="1839000" />
-      <workItem from="1585080491917" duration="648000" />
+      <workItem from="1585080491917" duration="1117000" />
+      <workItem from="1586020548572" duration="6991000" />
     </task>
     <servers />
   </component>
@@ -176,29 +221,53 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1584305005382" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1585081220238">
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1586076184227">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586076184227" />
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1586076444107">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640733" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585081220238" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1585081220237">
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586076444107" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1585128327767" />
+    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1586076444106">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640730" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585081220237" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1585081220236">
+    <state width="1398" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586076444106" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
+    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1586076444105">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640729" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585081220236" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1585081220237">
+    <state width="1398" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586076444105" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1585128327765" />
+    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1586076444106">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640731" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585081220237" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1585080493593">
+    <state width="1398" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586076444106" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586030085307">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1585080493593" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586030085307" />
+    <state x="301" y="175" width="837" height="550" key="find.popup" timestamp="1586073659643">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="175" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1586073659643" />
+    <state x="482" y="73" key="refactoring.ChangeSignatureDialog" timestamp="1586075188413">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="73" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1586075188413" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/vvss$AppTest_testAddAssignmentTC12.ic" NAME="AppTest.testAddAssignmentTC12 Coverage Results" MODIFIED="1586076435383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Lab3VVSS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/vvss$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1586076444088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Lab3VVSS.*</FILTER>
+    </SUITE>
   </component>
 </project>
