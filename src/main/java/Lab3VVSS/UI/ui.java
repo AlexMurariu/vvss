@@ -84,8 +84,8 @@ public class ui {
             tmLbSrv.add(new TemaLab(temaId, descr, saptL, saptP));
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
-        } catch (NumberFormatException exception){
-            System.out.println(exception.getMessage());
+        } catch (RuntimeException exception){
+            System.out.println("Please enter a number");
         }
     }
 
