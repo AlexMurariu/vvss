@@ -9,11 +9,11 @@ import Lab3VVSS.Repository.XMLFileRepository.NotaXMLRepo;
 import java.io.*;
 import java.time.LocalDateTime;
 
-public class NotaXMLService extends AbstractXMLService<Integer, Nota> {
+public class NotaXMLService {
     private NotaXMLRepo xmlrepo;
 
-    public NotaXMLService(NotaXMLRepo xmlrepo)  {
-        super(xmlrepo);
+    public NotaXMLService(NotaXMLRepo _xmlrepo)  {
+        this.xmlrepo = _xmlrepo;
     }
 
     public String depunctare(TemaLabXMLService srv, String idt, String val){
@@ -31,23 +31,21 @@ public class NotaXMLService extends AbstractXMLService<Integer, Nota> {
         xmlrepo.save(nota);
     }
 
-    public void printAllNotes(TemaLabXMLService srv) throws IOException {
-        DataOutputStream out = new DataOutputStream(new FileOutputStream("NoteStudenti.txt"));
-        this.findAll().forEach(n-> {
-            try {
-                out.writeChars("Tema: "+n.getTemaLabId()+
-                        "\nNota: "+n.getValoare()+
-                        "\nPredata in saptamana: "+srv.findOne(n.getTemaLabId()).getSaptammanaPredarii()+
-                        "\nDeadline: "+srv.findOne(n.getTemaLabId()).getTermenLimita()+
-                        "\nFeedback: Se putea si mai bine!\n\n\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+//    public void printAllNotes(TemaLabXMLService srv) throws IOException {
+//        DataOutputStream out = new DataOutputStream(new FileOutputStream("NoteStudenti.txt"));
+//        this.findAll().forEach(n-> {
+//            try {
+//                out.writeChars("Tema: "+n.getTemaLabId()+
+//                        "\nNota: "+n.getValoare()+
+//                        "\nPredata in saptamana: "+srv.findOne(n.getTemaLabId()).getSaptammanaPredarii()+
+//                        "\nDeadline: "+srv.findOne(n.getTemaLabId()).getTermenLimita()+
+//                        "\nFeedback: Se putea si mai bine!\n\n\n");
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
+//    }
 
-    }
-
-    @Override
     protected Nota extractEntity(String[] params){
         Nota n=new Nota(Integer.parseInt(params[0]),params[1],Integer.parseInt(params[2]),Double.parseDouble(params[3]), LocalDateTime.parse(params[4]));
         return n;

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentiXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentiXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemeXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TemeXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/NotaXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/NotaXMLService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +16,13 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="201" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -50,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/Lab3VVSS" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.InClass4">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
       <module name="vvss" />
@@ -77,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InClass4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -86,15 +97,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testAddAssignmentTC10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InClass4.addAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +112,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentTC10" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
+      <option name="METHOD_NAME" value="addAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testAddAssignmentTC12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InClass4.addNotaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -119,14 +128,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentTC12" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
+      <option name="METHOD_NAME" value="addNotaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testAddAssignmentTC9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InClass4.addStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
-      <option name="METHOD_NAME" value="testAddAssignmentTC9" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
+      <option name="METHOD_NAME" value="addStudentTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InClass4" />
+        <item itemvalue="JUnit.InClass4.addAllTest" />
+        <item itemvalue="JUnit.InClass4.addNotaTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.testAddAssignmentTC12" />
-        <item itemvalue="JUnit.AppTest.testAddAssignmentTC10" />
-        <item itemvalue="JUnit.AppTest.testAddAssignmentTC9" />
+        <item itemvalue="JUnit.InClass4.addStudentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +188,8 @@
       <workItem from="1584304931525" duration="2390000" />
       <workItem from="1584724514341" duration="1839000" />
       <workItem from="1585080491917" duration="1117000" />
-      <workItem from="1586020548572" duration="8582000" />
+      <workItem from="1586020548572" duration="9778000" />
+      <workItem from="1586326054760" duration="2572000" />
     </task>
     <servers />
   </component>
@@ -203,50 +213,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586076184227" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1586079115140">
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1586329166587">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640733" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586079115140" />
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586329166587" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1585128327767" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1586079115138">
+    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1586329166586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640730" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586079115138" />
+    <state width="1398" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586329166586" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1586079115137">
+    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1586329166585">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640729" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586079115137" />
+    <state width="1398" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586329166585" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1585128327765" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1586079115139">
+    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1586329166586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640731" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586079115139" />
+    <state width="1398" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586329166586" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1586079121373">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1586172315038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586079121373" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1586079121372">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586172315038" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1586172315037">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1586079121372" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1586079121371">
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1586172315037" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1586172315036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1586079121371" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1586079121373">
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1586172315036" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1586172315037">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1586079121373" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1586030085307">
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1586172315037" />
+    <state x="397" y="279" key="com.intellij.ide.util.TipDialog" timestamp="1586326074924">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586030085307" />
+    <state x="397" y="279" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1586326074924" />
     <state x="301" y="175" width="837" height="550" key="find.popup" timestamp="1586073659643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -256,19 +266,11 @@
     </state>
     <state x="482" y="73" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1586075188413" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vvss$AppTest_testAddAssignmentTC12.ic" NAME="AppTest.testAddAssignmentTC12 Coverage Results" MODIFIED="1586076435383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Lab3VVSS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/vvss$Main.ic" NAME="Main Coverage Results" MODIFIED="1586082446333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Lab3VVSS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/vvss$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1586076444088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

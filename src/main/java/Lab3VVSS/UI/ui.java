@@ -110,11 +110,9 @@ public class ui {
             LocalDateTime _data = LocalDateTime.parse(data);
             String val1=notaSrv.depunctare(tmLbSrv,idt,val);
             notaSrv.add(new Nota(_id, ids, _idt, _val, _data));
-            notaSrv.printAllNotes(tmLbSrv);
+//            notaSrv.printAllNotes(tmLbSrv);
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
-        } catch (IOException e) {
-            e.printStackTrace();
         } catch (NumberFormatException exception){
             System.out.println(exception.getMessage());
         }
