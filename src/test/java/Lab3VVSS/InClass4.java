@@ -16,10 +16,7 @@ import Lab3VVSS.Validator.StudentValidator;
 import Lab3VVSS.Validator.TemaLabValidator;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.io.PrintWriter;
 import java.time.LocalDateTime;
-
 import static junit.framework.TestCase.assertEquals;
 
 public class InClass4 {
@@ -85,5 +82,4 @@ public class InClass4 {
         notaXml.add(nota);
         assertEquals(notaRepo.size(), 1);
     }
-
 }
