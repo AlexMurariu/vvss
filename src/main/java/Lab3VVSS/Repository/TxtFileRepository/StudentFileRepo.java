@@ -19,7 +19,7 @@ public class StudentFileRepo extends AbstractFileRepository {
         int grup = Integer.parseInt(info[2]);
         String email = info[3];
         String indrumator = info[4];
-        Student s = new Student(id, nume, grup, email, indrumator);
+        Student s = new Student(Integer.parseInt(id), nume, grup, email, indrumator);
         return s;
 
     }

@@ -38,7 +38,7 @@ public class InClass4 {
         studentRepo = new StudentXMLRepo(studentValidator, "testStudenti.xml");
         temaRepo = new TemaLabXMLRepo(temaValidator, "testTeme.xml");
         notaRepo = new NotaXMLRepo(notaValidator, "testNote.xml");
-        Student stud = new Student("1", "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        Student stud = new Student(1, "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
         TemaLab tema = new TemaLab(1, "Ceva descriere", 10, 12);
         studentXml = new StudentXMLService(studentRepo);
         temaXml = new TemaLabXMLService(temaRepo);
@@ -49,7 +49,7 @@ public class InClass4 {
 
     @Test
     public void addStudentTest() throws ValidatorException {
-        Student stud = new Student("2", "Alex", 935, "mail@mail.mail", "Radu Dragos");
+        Student stud = new Student(2, "Alex", 935, "mail@mail.mail", "Radu Dragos");
         studentXml.add(stud);
         assertEquals(studentRepo.size(), 2);
     }
@@ -70,7 +70,7 @@ public class InClass4 {
 
     @Test
     public void addAllTest() throws ValidatorException {
-        Student stud = new Student("2", "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        Student stud = new Student(2, "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
         studentXml.add(stud);
         assertEquals(studentRepo.size(), 2);
 

@@ -26,7 +26,7 @@ public class AppTest {
         StudentValidator studentValidator = new StudentValidator();
         StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
         StudentXMLService xmlService = new StudentXMLService(xmlRepo);
-        Student stud = new Student("0", "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        Student stud = new Student(0, "Birhan", 935, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
         xmlService.add(stud);
         assertEquals(xmlRepo.size(), 1);
     }
@@ -37,12 +37,151 @@ public class AppTest {
         StudentValidator studentValidator = new StudentValidator();
         StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
         StudentXMLService xmlService = new StudentXMLService(xmlRepo);
-        Student stud = new Student("", "Birhan", 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        Student stud = new Student(1, "Birhan", -30, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
         try {
             xmlService.add(stud);
-            fail("Rip");
         } catch (ValidatorException exception) {
 
+        }
+    }
+
+    @Test
+    public void testAddStudentBB2() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(null, "Birhan", 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB4() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(-1, "Birhan", 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB5() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, null, 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB6() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "A13x", 931, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB7() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", null, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB8() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", 1, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB10() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", 1000, "mbie2368@scs.ubbcluj.ro", "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB11() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", 935, null, "Radu Dragos");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB12() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", 935, "alex@mail.com", null);
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
+        }
+    }
+
+    @Test
+    public void testAddStudentBB13() {
+
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo xmlRepo = new StudentXMLRepo(studentValidator, "StudentiXML.xml");
+        StudentXMLService xmlService = new StudentXMLService(xmlRepo);
+        Student stud = new Student(1, "Alex", 935, "alex@mail.com", "P0pescu");
+        try {
+            xmlService.add(stud);
+        } catch (ValidatorException exception) {
+            assertEquals(xmlRepo.getSize(), 0);
         }
     }
 

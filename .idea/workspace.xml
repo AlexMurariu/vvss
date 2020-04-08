@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="" />
+    <list default="true" id="58ebcb13-bddf-40b1-a502-64a90bf4a837" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentiXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentiXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemeXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TemeXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/MemoryRepository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/MemoryRepository/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/TxtFileRepository/StudentFileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/TxtFileRepository/StudentFileRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/XMLFileRepository/StudentXMLRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Repository/XMLFileRepository/StudentXMLRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/TxtFileService/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/StudentXMLService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Service/XMLFileService/StudentXMLService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/UI/ui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Validator/StudentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lab3VVSS/Validator/StudentValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lab3VVSS/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lab3VVSS/InClass4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lab3VVSS/InClass4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lab3VVSS/UI/ui.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,20 +69,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/Lab3VVSS" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InClass4">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
-      <module name="vvss" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab3VVSS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab3VVSS.Main" />
       <module name="Lab3VVSS" />
@@ -81,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InClass4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +92,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InClass4.addAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testAddStudentBB10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -105,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
-      <option name="METHOD_NAME" value="addAllTest" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddStudentBB10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InClass4.addNotaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testAddStudentBB11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -121,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
-      <option name="METHOD_NAME" value="addNotaTest" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddStudentBB11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InClass4.addStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testAddStudentBB12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vvss" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +139,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lab3VVSS" />
-      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.InClass4" />
-      <option name="METHOD_NAME" value="addStudentTest" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddStudentBB12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAddStudentBB13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vvss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab3VVSS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab3VVSS" />
+      <option name="MAIN_CLASS_NAME" value="Lab3VVSS.AppTest" />
+      <option name="METHOD_NAME" value="testAddStudentBB13" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InClass4" />
-        <item itemvalue="JUnit.InClass4.addAllTest" />
-        <item itemvalue="JUnit.InClass4.addNotaTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.InClass4.addStudentTest" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testAddStudentBB13" />
+        <item itemvalue="JUnit.AppTest.testAddStudentBB12" />
+        <item itemvalue="JUnit.AppTest.testAddStudentBB11" />
+        <item itemvalue="JUnit.AppTest.testAddStudentBB10" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +200,7 @@
       <workItem from="1584724514341" duration="1839000" />
       <workItem from="1585080491917" duration="1117000" />
       <workItem from="1586020548572" duration="9778000" />
-      <workItem from="1586326054760" duration="3159000" />
+      <workItem from="1586326054760" duration="6098000" />
     </task>
     <servers />
   </component>
@@ -206,29 +224,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586076184227" />
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1586329203221">
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom" timestamp="1586335523220">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640733" />
-    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586329203221" />
+    <state width="1398" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586335523220" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1585128327767" />
-    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1586329203220">
+    <state width="1398" height="222" key="GridCell.Tab.0.center" timestamp="1586335523219">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640730" />
-    <state width="1398" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586329203220" />
+    <state width="1398" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586335523219" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
-    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1586329203219">
+    <state width="1398" height="222" key="GridCell.Tab.0.left" timestamp="1586335523218">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640729" />
-    <state width="1398" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586329203219" />
+    <state width="1398" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586335523218" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1585128327765" />
-    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1586329203220">
+    <state width="1398" height="222" key="GridCell.Tab.0.right" timestamp="1586335523220">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900/-1080.-1080.1920.1080/840.-1080.1920.1080@0.0.1440.900" timestamp="1584353640731" />
-    <state width="1398" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586329203220" />
+    <state width="1398" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586335523220" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1585128327766" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1586172315038">
       <screen x="0" y="0" width="1440" height="900" />

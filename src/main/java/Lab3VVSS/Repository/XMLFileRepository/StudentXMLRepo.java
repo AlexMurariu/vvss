@@ -6,7 +6,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 
-public class StudentXMLRepo extends AbstractXMLRepo<String, Student> {
+public class StudentXMLRepo extends AbstractXMLRepo<Integer, Student> {
     //private String fileName;
 
     public StudentXMLRepo(StudentValidator v, String fileName) {
@@ -17,7 +17,7 @@ public class StudentXMLRepo extends AbstractXMLRepo<String, Student> {
     protected Element createElementFromEntity(Document document,Student s) {
         Element root = document.getDocumentElement();
         Element e = document.createElement("student");
-        e.appendChild(createElement("id", document, s.getId()));
+        e.appendChild(createElement("id", document, Integer.toString(s.getId())));
         e.appendChild(createElement("nume", document, s.getNume()));
         e.appendChild(createElement("grupa", document, Integer.toString(s.getGrupa())));
         e.appendChild(createElement("email", document, s.getEmail()));
@@ -47,7 +47,7 @@ public class StudentXMLRepo extends AbstractXMLRepo<String, Student> {
                 .getElementsByTagName("prof")
                 .item(0)
                 .getTextContent();
-        return new Student(id,nume,gr,email,prof);
+        return new Student(Integer.parseInt(id),nume,gr,email,prof);
     }
 
 }

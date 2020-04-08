@@ -43,6 +43,7 @@ public class ui {
             String id,nume,grupa,email,prof;
             System.out.println("Id student:");
             id=scanner.nextLine();
+            int student = Integer.parseInt(id);
             System.out.println("Nume student:");
             nume=scanner.nextLine();
             System.out.println("Grupa:");
@@ -53,7 +54,7 @@ public class ui {
             email=scanner.nextLine();
             System.out.println("Profesor indrumator:");
             prof=scanner.nextLine();
-            stdSrv.add(new Student(id, nume, _grupa, email, prof));
+            stdSrv.add(new Student(student, nume, _grupa, email, prof));
         }catch (ValidatorException ex){
             System.out.println(ex.getMessage());
         } catch (NumberFormatException exception){
@@ -125,7 +126,7 @@ public class ui {
         System.out.println("Id student:");
         id=scanner.nextLine();
         try{
-            stdSrv.remove(id);
+            stdSrv.remove(Integer.parseInt(id));
         }catch(ServiceException ex){
             System.out.println(ex.getMessage());
         }
@@ -147,9 +148,10 @@ public class ui {
 
     public void updStudent() throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
-        String id,nume,grupa,email,prof;
+        String nume,grupa,email,prof;
+        int id;
         System.out.println("Id student:");
-        id=scanner.nextLine();
+        id=scanner.nextInt();
         System.out.println("Nume student:");
         nume=scanner.nextLine();
         System.out.println("Grupa:");
